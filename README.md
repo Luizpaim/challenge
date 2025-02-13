@@ -31,6 +31,9 @@ O que você precisa para configurar o projeto:
    ```bash
    npm run db:migrate && npm run db:seed
    ```
+
+   Observação: certifique-se de que o arquivo `.env` está configurado corretamente, e que as credenciais de acesso ao banco de dados estão corretas,  de acordo com o que está configurado na sua maquina.
+
 5. Inicie o servidor:
    ```bash
    npm run start:dev
@@ -53,3 +56,11 @@ Caso precise criar novas migrations, utilize o comando:
 ```bash
 npm run db:create_migration --name=create-xpto-table
 ```
+Pontos que foram abordados no projeto:
+
+- [x] Refatoração da arquitetura do projeto,  para Clean Architecture:
+  Motivos - Eu gosto da arquitetura modular do Nest, porém quando o projeto cresce, a arquitetura do Nest, pode se tornar um pouco confusa, com muitos módulos, e arquivos de services giantescos, e dificultar a manutenção, por isso optei por uma arquitetura mais limpa, e mais escalável no desenvolvimento dos testes.
+- [x] Utilização de Design Patterns,  Factory Method, Strategy, Singleton, Repository, Service, DTO, Dependency Injection, para contribuir na abordagem de Criação de outros tipos de Conteúdo, de forma mais escalável.
+- [x] Utilização de Testes Unitários e integração, para garantir a integridade do código cobertura de 90%.
+- [x] Correção da Falha de Segurança na busca de conteúdo por ID, que permitia a busca de conteúdos de outras empresas que não a do usuário logado, resolvi isso ajustando a arquitetura multi-tenant, e peando o id da company no token de autenticação, e passando na query, dado esse resultado um item da lista, não vai ser encontrado.
+- [x] Implementação de um novo formato de conteudo TXT, de forma muito simples, para exemplificar a escalabilidade da arquitetura,  adicionando um novo item no modelo da Factory e implementando os testes.
