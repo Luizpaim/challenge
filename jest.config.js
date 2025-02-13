@@ -3,33 +3,41 @@ module.exports = {
   transform: {
     '^.+\\.ts$': 'ts-jest',
   },
-  testMatch: ['<rootDir>/test/**/*.test.ts'],
+
+  testMatch: ['<rootDir>/test/**/*.unit.test.ts', '<rootDir>/test/**/*.integration.test.ts'],
   testEnvironment: 'node',
   restoreMocks: true,
   clearMocks: true,
   resetMocks: true,
   collectCoverage: true,
   coverageDirectory: 'coverage',
+
   collectCoverageFrom: [
-    'src/**/{!(*.module|index|main),}.ts',
-    '!src/**/database/**',
-    '!src/**/entity/**',
+    'src/domain/**/*.{ts,tsx}',
+    'src/application/**/*.{ts,tsx}',
+    'src/infrastructure/**/*.{ts,tsx}',
+    'src/infrastructure/database/*.module.ts',
+    'src/presentation/**/*.{ts,tsx}',
+    '!src/**/index.ts',
+    '!src/main.ts',
   ],
+
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/test/',
     '/config/',
-    '/type/',
-    '/error/',
+    '/types/',
+    '/errors/',
     '/dto/',
+    '/migration/',
   ],
   coverageReporters: ['lcovonly', 'text'],
   coverageThreshold: {
     global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80,
+      branches: 90,
+      functions: 90,
+      lines: 90,
+      statements: 90,
     },
   },
 }

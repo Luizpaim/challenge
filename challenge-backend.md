@@ -1,9 +1,5 @@
 # 🎬 Desafio Backend - Provisionador de Conteúdos
 
-## Produto
-
-A Plataforma LXM da Learning Rocks é uma solução de educação corporativa desenvolvida para potencializar o aprendizado e a performance dos colaboradores dentro das empresas. Nosso modelo B2B atende organizações que desejam estruturar e gerenciar treinamentos obrigatórios, trilhas de conhecimento e capacitações personalizadas.
-
 ## 🚀 Contexto
 
 No fim do ano, iniciamos o desenvolvimento do **provisionador de conteúdos** para servir os players. Devido ao prazo apertado, conseguimos entregar apenas os quatro primeiros tipos de conteúdo: `vídeo`, `imagem`, `PDF` e `link`.
@@ -66,9 +62,9 @@ Após concluir o desafio, siga as instruções abaixo para enviá-lo corretament
 
    - Certifique-se de incluir um **README.md** atualizado, explicando como rodar a aplicação, decisões técnicas e melhorias feitas.
 
-3. **Envie o link do repositório no canal de comunicação informado pelo recrutador (não abra pull request).**
+3. **Envie o link do repositório e do PR no canal de comunicação informado pelo recrutador.**
    - Caso o repositório seja privado, adicione os usuários avaliadores (solicite ao recrutador) como colaboradores para que possamos revisar.
-   - Se houver alguma consideração adicional, documente no README.
+   - Se houver alguma consideração adicional, documente no README ou na descrição do PR.
 
 ### 🔍 O que será avaliado?
 
@@ -80,9 +76,9 @@ Após concluir o desafio, siga as instruções abaixo para enviá-lo corretament
 
 ✅ **Segurança** – A falha crítica foi corrigida?
 
-✅ **Testes** – Testes unitários (e/ou de integração) foram implementados corretamente? O projeto possuí uma coberta minima de 80%.
+✅ **Testes** – Testes unitários (e/ou de integração) foram implementados corretamente?
 
-✅ **Documentação** – O README do seu projeto tem todas as informações necessárias?
+✅ **Documentação** – O README do seu projeto tem todas as informações necessárias para executar o projeto de forma fácil?
 
 Se tiver dúvidas sobre o envio, entre em contato! 🚀
 

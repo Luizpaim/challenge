@@ -1,3 +1,11 @@
+# Desafio técnico - Learning Rocks
+
+## Contexto
+
+A Plataforma LXM da Learning Rocks é uma solução de educação corporativa desenvolvida para potencializar o aprendizado e a performance dos colaboradores dentro das empresas. Nosso modelo B2B atende organizações que desejam estruturar e gerenciar treinamentos obrigatórios, trilhas de conhecimento e capacitações personalizadas.
+
+---
+
 ## Setup do projeto de backend
 
 ### Pré-requisitos

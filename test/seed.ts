@@ -1,9 +1,10 @@
 /* eslint-disable no-console */
+
+import { AppDataSource } from 'src/infrastructure/database/typeORM/data-source.database'
+import { Company } from 'src/infrastructure/database/typeORM/entities/company/company.entity'
+import { Content } from 'src/infrastructure/database/typeORM/entities/content/content.entity'
+import { User } from 'src/infrastructure/database/typeORM/entities/user'
 import { DataSource } from 'typeorm'
-import { User } from 'src/user/entity'
-import { Company } from 'src/company/entity'
-import { AppDataSource } from 'src/database/data-source.database'
-import { Content } from 'src/content/entity'
 
 export const seedDatabase = async (dataSource: DataSource) => {
   const queryRunner = dataSource.createQueryRunner()
@@ -70,6 +71,19 @@ export const seedDatabase = async (dataSource: DataSource) => {
         url: 'http://localhost:3000/uploads/pdf1.pdf',
         cover: 'http://localhost:3000/uploads/pdf1-cover.jpg',
         type: 'pdf',
+        total_likes: 4,
+        company: createdCompany1,
+      }),
+    ),
+    queryRunner.manager.save(
+      queryRunner.manager.create(Content, {
+        id: '7acff1c5-4c43-4923-a323-d22a12573044',
+        title: 'Guia de Boas Práticas em Desenvolvimento FORMATO TEXTO',
+        description:
+          'Um documento detalhado sobre boas práticas de programação e metodologias ágeis.FORMATO TEXTO',
+        url: 'http://localhost:3000/uploads/txt1.txt',
+        cover: 'http://localhost:3000/uploads/txt1-cover.txt',
+        type: 'txt',
         total_likes: 4,
         company: createdCompany1,
       }),

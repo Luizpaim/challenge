@@ -1,9 +1,5 @@
 # 🎬 Desafio Frontend - Player de Conteúdos
 
-## Produto
-
-A Plataforma LXM da Learning Rocks é uma solução de educação corporativa desenvolvida para potencializar o aprendizado e a performance dos colaboradores dentro das empresas. Nosso modelo B2B atende organizações que desejam estruturar e gerenciar treinamentos obrigatórios, trilhas de conhecimento e capacitações personalizadas.
-
 ## 🚀 Contexto
 
 Nosso backend provisiona diferentes tipos de conteúdos (`vídeo`, `imagem`, `PDF` e `link`), e agora queremos construir uma interface para exibir esses conteúdos aos usuários.
@@ -168,7 +164,7 @@ Se houver alguma consideração adicional, documente no README.
 
 ✅ **Responsividade** – A interface se adapta bem a diferentes dispositivos?
 
-✅ **Testes** – Testes unitários foram implementados corretamente? O projeto possuí uma coberta minima de 80%.
+✅ **Testes** – Testes unitários foram implementados corretamente?
 
 ✅ **Documentação** – O README do seu projeto tem todas as informações necessárias para executar o projeto de forma fácil?
 
